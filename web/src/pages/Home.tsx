@@ -1,3 +1,4 @@
+import Nav from "../components/fragmentos/Nav";
 import Beijo from "../components/modal/Beijo";
 
 import { useState } from "react"
@@ -14,7 +15,8 @@ export default function Home(){
     }
 
     return (
-        <section className="w-full h-screen flex items-center justify-center bg-zinc-50">
+        <section className="w-full h-screen flex items-center justify-center bg-zinc-50 flex-col gap-2 overflow-auto pt-20">
+            <Nav/>
             {open ? <Beijo/> : null}
             <div className="bg-white drop-shadow-md rounded-md">
                 <div className="w-fit rounded-md overflow-hidden h-fit">
@@ -47,6 +49,35 @@ export default function Home(){
                     </div>
                 </div>
             </div>
+            <div className="w-[600px]">
+                <div className="w-full flex gap-3">
+                    <button className="bg-black text-white rounded-t-md px-2 py-1">
+                        Projetos
+                    </button>
+                    <button className="bg-white rounded-t-md px-2 py-1">
+                        Recados
+                    </button>
+                </div>
+                <div className="h-full w-full bg-white shadow-md rounded-tr-md">
+                    <div>
+                        <img src="https://i.pinimg.com/736x/28/72/72/2872722dfcf881ff5cc2cf210c462ff8.jpg" alt="" />
+                        <h1>
+                            Sistema de gestão
+                        </h1>
+                        <p>
+                            Sistema desenvolvido para trabalhar meus conhecimentos
+                            Achei muito dificil 
+                        </p>
+                        <input type="text" className="w-full border rounded-md px-2 py-1" placeholder="Deixe seu comentario!" />
+                    </div>
+                </div>
+            </div>
+            {/* <div className="w-[600px] flex gap-1 items-center">
+                <input className="border-2 rounded-md bg-white drop-shadow-lg px-2 py-1 flex-1" type="text" placeholder="Deixe um recado...."/>
+                <button className="px-2 py-1 bg-black text-white rounded-md">
+                    Publicar
+                </button>
+            </div> */}
         </section>
     )
 }
