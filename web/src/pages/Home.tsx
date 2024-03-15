@@ -15,7 +15,7 @@ export default function Home(){
     }
 
     return (
-        <section className="w-full h-screen flex items-center justify-center bg-zinc-50 flex-col gap-2 overflow-auto pt-20">
+        <section className="w-full h-screen flex items-center justify-center bg-zinc-50 flex-col gap-2 overflow-auto pt-[500px]">
             <Nav/>
             {open ? <Beijo/> : null}
             <div className="bg-white drop-shadow-md rounded-md">
