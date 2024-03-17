@@ -2,7 +2,7 @@ import { GithubLogo, Globe, ImagesSquare, LinkSimpleHorizontal, Trash, X } from 
 import Nav from "../components/fragmentos/Nav";
 import Cutuca from "../components/modal/Cutuca";
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { UsuarioInterface } from "../interface/UsuarioInterface";
 
 export default function Perfil(){
@@ -17,7 +17,7 @@ export default function Perfil(){
         }, 5000); // 10 segundos
     }
 
-    const [perfilConfig, setPerfilConfig] = useState<UsuarioInterface>({
+    const [perfilConfig ] = useState<UsuarioInterface>({
         arroba: "",
         bio1: "",
         bio2: "",
@@ -27,6 +27,7 @@ export default function Perfil(){
         nome:"",
         perfilImagen:""
     })
+
 
     return (
         <section className="w-full h-full flex items-center justify-center bg-zinc-100 flex-col gap-2 overflow-auto pb-10 py-16">

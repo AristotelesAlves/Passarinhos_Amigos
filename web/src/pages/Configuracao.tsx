@@ -1,4 +1,4 @@
-import { Camera, DotsThree, Image, Pen, X } from "@phosphor-icons/react";
+import { Image, ShieldCheck, X } from "@phosphor-icons/react";
 import Nav from "../components/fragmentos/Nav";
 
 export default function Configuracao(){
@@ -27,8 +27,16 @@ export default function Configuracao(){
                         </div>
                     </div>
                     <div className="flex gap-2 py-2">
-                        <div className="p-1 w-fit h-fit rounded-full  bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 to-blue-400">
+                        <div className="p-1 w-fit h-fit rounded-full  bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 to-blue-400 relative group">
                             <img className="w-[120px] h-[120px] rounded-full" src="" alt="" />
+                            <div className=" hover:flex hidden left-0 group-hover:flex justify-center items-center flex-col bg-black bg-opacity-40 w-full h-full  rounded-full absolute top-0">
+                            <div className=" flex items-center flex-col justify-center p-2 rounded-full border-2 transition duration-300 border-white h-[125px] w-[125px] text-white">
+                                <Image size={25}/>
+                                <h3 className="font-semibold text-sm text-center">
+                                    Editar foto de perfil
+                                </h3>
+                            </div>
+                        </div>
                         </div>
                         <form className="flex flex-col flex-1">
                             <label>Nome</label>
@@ -75,6 +83,31 @@ export default function Configuracao(){
                                 alt="" 
                             />
                         </div>
+                        
+                        <div className="flex items-center gap-1">
+                            <ShieldCheck />
+                            <h1 className="py-2 font-semibold">
+                                Segurança
+                            </h1>
+                        </div>
+                        <form className="flex flex-col gap-1">
+                            <label htmlFor="">Alterar E-mail</label>
+                            <div className="flex gap-1 w-full">
+                                <input className="rounded-md border px-2 py-1 flex-1" type="text" name="" id="" />
+                                <button className="px-2 py-1 text-white bg-black rounded-md">
+                                    Salvar
+                                </button>
+                            </div>
+                            <label htmlFor="">Nova senha</label>
+                            <div className="flex gap-1 w-full">
+                                <input className="rounded-md border px-2 py-1 flex-1" type="text" name="" id="" />
+                                <button className="px-2 py-1 text-white bg-black rounded-md">
+                                    Salvar
+                                </button>
+                            </div>
+                        </form>
+
+
                         <div className="flex gap-2 w-fll justify-end items-center mt-5">
                             <button className="px-2 py-1 text-white bg-black rounded-md">
                                 Cancelar
@@ -83,6 +116,8 @@ export default function Configuracao(){
                                 Salvar
                             </button>
                         </div>
+
+                        
                     </div>
                 </div>
             </div>
