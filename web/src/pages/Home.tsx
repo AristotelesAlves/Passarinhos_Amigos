@@ -7,7 +7,7 @@ export default function Home(){
     const postagems: PublicacaoInterface = {
         id: 'bufbeu2',
         titulo: 'Primeira postagem',
-        fotos: ['https://i.pinimg.com/564x/9d/21/ec/9d21eccdbd592755e66cb1b398b15ee1.jpg','https://i.pinimg.com/564x/19/48/e0/1948e0d493a0945020da622484b752ce.jpg'],
+        fotos: ['https://i.pinimg.com/564x/9d/21/ec/9d21eccdbd592755e66cb1b398b15ee1.jpg','https://i.pinimg.com/564x/19/48/e0/1948e0d493a0945020da622484b752ce.jpg', 'https://i.pinimg.com/564x/f4/34/19/f434198617b505887d949e52b0995f61.jpg'],
         descricao: 'Testando a descrição da publicação',
         dataPostagem: new Date(),
         repositorioLink: 'dssdsd',
