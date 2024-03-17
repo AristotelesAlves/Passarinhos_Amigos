@@ -1,4 +1,4 @@
-import { Bell, House, User } from "@phosphor-icons/react";
+import { ChatsTeardrop, Gear, House, User } from "@phosphor-icons/react";
 
 export default function Nav(){
     return (
@@ -9,10 +9,13 @@ export default function Nav(){
 
                 </li>
                 <li className="p-2 text-zinc-600 hover:bg-zinc-600 rounded-lg hover:text-zinc-50">
-                    <Bell size={32} weight="regular" />
+                    <ChatsTeardrop size={32} weight="regular" />
                 </li>
                 <li className="p-2 text-zinc-600 hover:bg-zinc-600 rounded-lg hover:text-zinc-50">
                     <User size={32} weight="regular" />
+                </li>
+                <li className="p-2 text-zinc-600 hover:bg-zinc-600 rounded-lg hover:text-zinc-50">
+                    <Gear size={32} weight="regular" />
                 </li>
             </ul>
         </header>

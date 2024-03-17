@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Login from "./pages/Login";
+import Perfil from "./pages/Perfil";
 import Home from "./pages/Home";
-import Evelig from "./pages/Eveling";
 
 export const routes = createBrowserRouter([
     {
@@ -13,7 +13,7 @@ export const routes = createBrowserRouter([
         element: <Login/>
     },
     {
-        path:'/pixilinga',
-        element: <Evelig/>
+        path: '/perfil/:id',
+        element: <Perfil/>
     }
 ])
